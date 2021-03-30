@@ -1,9 +1,11 @@
 <template>
-  <div></div>
+  <div>My Items page</div>
 </template>
 
 <script>
-export default {};
+export default {
+  layout: "no-nav",
+};
 </script>
 
 <style scoped>

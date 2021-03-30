@@ -7,6 +7,7 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
+        {{ data1 }}
       </p>
       <button class="button btn">Start Looking</button>
     </div>
@@ -19,7 +20,12 @@
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+export default {
+  computed: {
+    ...mapState(["data1"]),
+  },
+};
 </script>
 
 <style scoped>
